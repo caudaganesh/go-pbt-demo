@@ -40,7 +40,7 @@ func GenerateFetchArticleUseCase() gopter.Gen {
 	return gen.Struct(reflect.TypeOf(&FetchArticleUseCaseGenerator{}), map[string]gopter.Gen{
 		"FetchArticleRepoResp ": GenerateFetchArticleRepoResp(),
 		"GetByIDAuthorRepoResp": authorgenerator.GenerateGetByIDAuthorRepoResp(),
-		"NumArgs":               gen.IntRange(0, 0),
+		"NumArgs":               gen.IntRange(0, 1000),
 	})
 }
 

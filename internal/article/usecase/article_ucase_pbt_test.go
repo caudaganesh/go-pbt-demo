@@ -18,6 +18,7 @@ import (
 )
 
 func TestFetchPBTTestingQuick(t *testing.T) {
+	// t.Skip()
 	ctrl := gomock.NewController(t)
 	checkFetch := func(identifier testgenerator.FetchArticleUseCaseGenerator) bool {
 		mockArticleRepo := mock_article.NewMockRepository(ctrl)
@@ -48,6 +49,7 @@ func TestFetchPBTTestingQuick(t *testing.T) {
 }
 
 func TestFetchPBTGopter(t *testing.T) {
+	// t.Skip()
 	ctrl := gomock.NewController(t)
 	parameters := gopter.DefaultTestParameters()
 	parameters.Rng.Seed(1234)
