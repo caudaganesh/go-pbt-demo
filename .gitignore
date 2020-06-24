@@ -12,3 +12,4 @@
 *.out
 vendor
 go-pbt-demo
+.DS_Store
